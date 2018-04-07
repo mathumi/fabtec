@@ -71,19 +71,57 @@ header .main-navigation a{
 header .main-navigation .primary-menu > li.current-menu-item a{
 	color: #3065d5;
 	font-weight: 400;
+	text-decoration: none;
 }
 
 header .main-navigation .primary-menu > li{
-	padding: 20px 0;
-    background: #f1f1f1;
+	padding: 25px 0;
+    
 }
+
+header .main-navigation .primary-menu > li a{
+	text-decoration: none;
+}
+
+header .main-navigation .primary-menu > li:hover{
+	background: #f1f1f1;
+	}
 
 .site-header-menu{
 	margin: 0;
 }
-.site-content{
+
+.site-header{
 	padding: 0 !important;
 }
+header .main-navigation .menu-item-has-children > a:after{
+	top: 41%;
+}
+
+.main-navigation{
+	margin:0 15px;
+}
+
+header .main-navigation ul ul.sub-menu {
+	background: #f1f1f1;
+	    border-bottom: 3px solid #1F479C;
+	    min-width: 220px;
+	    top: 100%;
+	    padding-bottom: 20px;
+}
+header .main-navigation li:hover ul.sub-menu{
+	left:0 !important;
+}
+header .main-navigation ul ul li{
+	border:0;
+	background: #f1f1f1;
+	padding:5px 0;
+}
+
+header .main-navigation ul ul.sub-menu:before{
+	display: none;
+}
+
 .caption-section{
 	color: #fff;
 	width: 480px;
