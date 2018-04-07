@@ -254,6 +254,7 @@ function twentysixteen_scripts() {
 
 	//Custom style
 	wp_enqueue_style( 'custom_style', get_template_directory_uri(). '/css/custom_style.css' );
+	wp_enqueue_style( 'custom_style', get_template_directory_uri(). '/css/custom_style_pavi.css' );
 
 	// Load the Internet Explorer specific stylesheet.
 	wp_enqueue_style( 'twentysixteen-ie', get_template_directory_uri() . '/css/ie.css', array( 'twentysixteen-style' ), '20160816' );
