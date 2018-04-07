@@ -1,3 +1,16 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+}
+body:before,
+body:after {
+  display: none !important;
+}
+.site{
+	margin:0 !important;
+}
 .white_text{
 	color: #fff;
 }
@@ -9,4 +22,12 @@
 .contact_header ul li{
 	color: #fff;
 	font-size: 11px;
+}
+.main-navigation a{
+	font-family: 'Open Sans', sans-serif;
+    color: #000;
+    font-size: 15px;
+}
+.site-header{
+	padding: 10px 30px!important;
 }
