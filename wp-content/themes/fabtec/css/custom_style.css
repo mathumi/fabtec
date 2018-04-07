@@ -8,6 +8,10 @@ body:before,
 body:after {
   display: none !important;
 }
+.padding_h20{
+	padding-right:20px;
+	padding-left: 20px;
+}
 .site{
 	margin:0 !important;
 }
@@ -17,12 +21,24 @@ body:after {
 
 .contact_header {
 	    background: #1F479C;
+	    padding-top:12px;
+	    padding-bottom: 12px;
 }
 
 .contact_header ul li{
 	color: #fff;
-	font-size: 11px;
+	font-size: 12px;
 }
+.contact_header ul{
+	margin:0;
+}
+
+.contact_header ul li i{
+	padding-right: 5px;
+	font-size: 20px;
+    display: inline-block;
+    vertical-align: bottom;
+ }
 .main-navigation a{
 	font-family: 'Open Sans', sans-serif;
     color: #000;
