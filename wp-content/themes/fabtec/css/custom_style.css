@@ -1,0 +1,12 @@
+.white_text{
+	color: #fff;
+}
+
+.contact_header {
+	    background: #1F479C;
+}
+
+.contact_header ul li{
+	color: #fff;
+	font-size: 11px;
+}
