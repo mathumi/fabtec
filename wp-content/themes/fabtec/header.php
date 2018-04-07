@@ -18,7 +18,9 @@
 	<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php endif; ?>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/custom_style.css" type="text/css" />
 	<?php wp_head(); ?>
 </head>
 
@@ -31,17 +33,17 @@
 		<div class="contact_header row text-left">
 			<div class="col-sm-6">
 			<ul class="list-inline">
-				<?php echo (get_theme_mod( 'address' )!='')?"<li>".get_theme_mod( 'address' )."</li>":''; ?>
-				<?php echo (get_theme_mod( 'phone' )!='')?"<li>".get_theme_mod( 'phone' )."</li>":''; ?>
-				<?php echo (get_theme_mod( 'email' )!='')?"<li>".get_theme_mod( 'email' )."</li>":''; ?>
+				<?php echo (get_theme_mod( 'address' )!='')?"<li><i class='fa fa-envelope'></i>&nbsp;".get_theme_mod( 'address' )."</li>":''; ?>
+				<?php echo (get_theme_mod( 'phone' )!='')?"<li><i class='fa fa-phone'></i>".get_theme_mod( 'phone' )."</li>":''; ?>
+				<?php echo (get_theme_mod( 'email' )!='')?"<li><i class='fa fa-map-marker'></i>".get_theme_mod( 'email' )."</li>":''; ?>
 				</ul>
 			</div>
 
 			<div class="col-sm-6 text-right">
 			<ul class="list-inline">
-			<?php echo (get_theme_mod( 'youtube' )!='')?"<li>".get_theme_mod( 'youtube' )."</li>":''; ?>
-			<?php echo (get_theme_mod( 'googleplus' )!='')?"<li>".get_theme_mod( 'googleplus' )."</li>":''; ?>
-			<?php echo (get_theme_mod( 'facebook' )!='')?"<li>".get_theme_mod( 'facebook' )."</li>":''; ?>
+			<?php echo (get_theme_mod( 'youtube' )!='')?"<li><i class='fa fa-youtube'></i>".get_theme_mod( 'youtube' )."</li>":''; ?>
+			<?php echo (get_theme_mod( 'googleplus' )!='')?"<li><i class='fa fa-google-plus'></i>".get_theme_mod( 'googleplus' )."</li>":''; ?>
+			<?php echo (get_theme_mod( 'facebook' )!='')?"<li><i class='fa fa-facebook'></i>".get_theme_mod( 'facebook' )."</li>":''; ?>
 			</ul>
 			</div>
 			</div>
