@@ -31,3 +31,27 @@ body:after {
 .site-header{
 	padding: 10px 30px!important;
 }
+.site-content{
+	padding: 0 !important;
+}
+.caption-section{
+	color: #fff;
+	width: 480px;
+	background: rgba(23, 37, 75,0.3);
+	border-top: 3px solid rgb(23, 37, 75);
+	padding: 30px 50px;
+	top: unset !important;
+}
+.caption-section .text{
+	white-space: pre-wrap;
+	padding-right: 40px;
+
+}
+.caption-section h2{
+	font-weight: 700;
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+.caption-section .text{
+	font-size: 15px;
+}
