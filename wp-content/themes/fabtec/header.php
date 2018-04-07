@@ -52,7 +52,7 @@
 </section>
 			<?php } ?>
 
-		<header id="masthead" class="site-header" role="banner">
+		<header id="masthead" class="site-header header" role="banner">
 			<div class="site-header-main padding_h15">
 				<div class="site-branding padding_h15">
 					<?php twentysixteen_the_custom_logo(); ?>
@@ -70,9 +70,10 @@
 				</div><!-- .site-branding -->
 
 				<?php if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) ) : ?>
-					<button id="menu-toggle" class="menu-toggle"><?php _e( 'Menu', 'twentysixteen' ); ?></button>
+					<input class="menu-btn menu-toggle" type="checkbox" id="menu-toggle" />
+ 					 <label class="menu-icon" for="menu-toggle"><span class="navicon"></span></label>
 
-					<div id="site-header-menu" class="site-header-menu">
+					<div id="site-header-menu" class="site-header-menu ">
 						<?php if ( has_nav_menu( 'primary' ) ) : ?>
 							<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'twentysixteen' ); ?>">
 								<?php

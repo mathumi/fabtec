@@ -18,6 +18,9 @@ body:after {
 a{
 	color:#3065d5;
 }
+.site-content {
+    padding: 0 !important;
+}
 .padding_h15{
 	padding-right:15px;
 	padding-left: 15px;
@@ -112,6 +115,13 @@ header .main-navigation ul ul.sub-menu {
 header .main-navigation li:hover ul.sub-menu{
 	left:0 !important;
 }
+.main-navigation li{
+	border: none;
+}
+.main-navigation li:not(:first-child){
+	border-top: 1px solid #eaeaea;
+
+}
 header .main-navigation ul ul li{
 	border:0;
 	background: #f1f1f1;
@@ -161,4 +171,82 @@ header .main-navigation ul ul.sub-menu:before{
 .crellyslider>.cs-navigation>.cs-slide-link.cs-active{
 	background-color: rgb(212, 55, 59);
 	opacity: 1;
+}
+
+/* menu icon */
+.header .menu-icon{
+	display: none;
+}
+.header .menu-toggle {
+  display: none;
+}
+.header .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 22px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 7px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -7px;
+}
+
+/* menu btn */
+.header .menu-toggle:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-toggle:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-toggle:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.header .menu-toggle:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.header .menu-toggle:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-toggle:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+@media (max-width:991px){
+	.header .menu-icon {
+	    display: inline-block;
+	}
+	.header .menu-icon .navicon:before, .header .menu-icon .navicon:after, .header .menu-icon .navicon {
+	    background: #303030;
+	}
+	header .main-navigation .primary-menu > li {
+	    padding: 2px 0;
+	}
 }
