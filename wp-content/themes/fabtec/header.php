@@ -20,36 +20,38 @@
 	<?php endif; ?>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/bootstrap.css" type="text/css" />
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/custom_style.css" type="text/css" />
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<div class="site-inner">
+	<div class="site-inner-page">
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentysixteen' ); ?></a>
 		<?php if(get_theme_mod( 'address' ) || get_theme_mod( 'phone' ) || get_theme_mod( 'email' ) || get_theme_mod( 'youtube' ) || get_theme_mod( 'googleplus' ) || get_theme_mod( 'facebook' )){ ?>
+		<!-- short header -->
+		<section>
 		<div class="container-fluid">
-		<div class="contact_header row text-left">
+		<div class="contact_header row text-left padding_h15">
 			<div class="col-sm-6">
 			<ul class="list-inline">
-				<?php echo (get_theme_mod( 'address' )!='')?"<li><i class='fa fa-envelope'></i>&nbsp;".get_theme_mod( 'address' )."</li>":''; ?>
-				<?php echo (get_theme_mod( 'phone' )!='')?"<li><i class='fa fa-phone'></i>".get_theme_mod( 'phone' )."</li>":''; ?>
-				<?php echo (get_theme_mod( 'email' )!='')?"<li><i class='fa fa-map-marker'></i>".get_theme_mod( 'email' )."</li>":''; ?>
+				<?php echo (get_theme_mod( 'address' )!='')?"<li><a href='javascript:void(0);' class='cursor_default'><i class='fa fa-map-marker'></i>&nbsp;".get_theme_mod( 'address' )."</a></li>":''; ?>
+				<?php echo (get_theme_mod( 'phone' )!='')?"<li><a href='tel:+6567342823'><i class='fa fa-phone'></i>".get_theme_mod( 'phone' )."</a></li>":''; ?>
+				<?php echo (get_theme_mod( 'email' )!='')?"<li><a href='mailto:info@fabtec.com.sg'><i class='fa fa-envelope'></i>".get_theme_mod( 'email' )."</a></li>":''; ?>
 				</ul>
 			</div>
 
 			<div class="col-sm-6 text-right">
-			<ul class="list-inline">
-			<?php echo (get_theme_mod( 'youtube' )!='')?"<li><i class='fa fa-youtube'></i>".get_theme_mod( 'youtube' )."</li>":''; ?>
-			<?php echo (get_theme_mod( 'googleplus' )!='')?"<li><i class='fa fa-google-plus'></i>".get_theme_mod( 'googleplus' )."</li>":''; ?>
-			<?php echo (get_theme_mod( 'facebook' )!='')?"<li><i class='fa fa-facebook'></i>".get_theme_mod( 'facebook' )."</li>":''; ?>
+			<ul class="list-inline social_media_head">
+			<?php echo (get_theme_mod( 'youtube' )!='')?"<li><a href='".get_theme_mod( 'youtube' )."'><i class='fa fa-youtube'></i></a></li>":''; ?>
+			<?php echo (get_theme_mod( 'googleplus' )!='')?"<li><a href='".get_theme_mod( 'googleplus' )."'><i class='fa fa-google-plus'></i></a></li>":''; ?>
+			<?php echo (get_theme_mod( 'facebook' )!='')?"<li><a href='".get_theme_mod( 'facebook' )."'><i class='fa fa-facebook'></i></a></li>":''; ?>
 			</ul>
 			</div>
 			</div>
-			<?php } ?>
 		</div>
+</section>
+			<?php } ?>
+
 		<header id="masthead" class="site-header" role="banner">
 			<div class="site-header-main">
 				<div class="site-branding">
