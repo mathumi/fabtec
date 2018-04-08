@@ -239,6 +239,7 @@ header .main-navigation ul ul.sub-menu:before{
 .header .menu-toggle:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
+
 @media (max-width:991px){
 	.header .menu-icon {
 	    display: inline-block;
@@ -249,4 +250,22 @@ header .main-navigation ul ul.sub-menu:before{
 	header .main-navigation .primary-menu > li {
 	    padding: 2px 0;
 	}
+	.contact_header ul li a {
+		font-size: 10px;
+	}
+	.contact_header ul li i {
+		padding-right: 8px;
+    font-size: 18px;
+	}
 }
+
+@media (max-width:767px){
+	header .main-navigation a{
+		    font-size: 13px;
+	}
+	header .dropdown-toggle{
+		width: 43px;
+		height: 43px;
+	}
+}
+

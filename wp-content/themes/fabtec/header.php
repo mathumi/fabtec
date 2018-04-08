@@ -31,8 +31,8 @@
 		<!-- short header -->
 		<section>
 		<div class="container-fluid">
-		<div class="contact_header row text-left padding_h15">
-			<div class="col-sm-6">
+		<div class="contact_header row text-left padding_h15 hidden-xs">
+			<div class="col-md-8 col-sm-9">
 			<ul class="list-inline">
 				<?php echo (get_theme_mod( 'address' )!='')?"<li><a href='javascript:void(0);' class='cursor_default'><i class='fa fa-map-marker'></i>&nbsp;".get_theme_mod( 'address' )."</a></li>":''; ?>
 				<?php echo (get_theme_mod( 'phone' )!='')?"<li><a href='tel:+6567342823'><i class='fa fa-phone'></i>".get_theme_mod( 'phone' )."</a></li>":''; ?>
@@ -40,7 +40,7 @@
 				</ul>
 			</div>
 
-			<div class="col-sm-6 text-right">
+			<div class="col-md-4 col-sm-3 text-right">
 			<ul class="list-inline social_media_head">
 			<?php echo (get_theme_mod( 'youtube' )!='')?"<li><a href='".get_theme_mod( 'youtube' )."'><i class='fa fa-youtube'></i></a></li>":''; ?>
 			<?php echo (get_theme_mod( 'googleplus' )!='')?"<li><a href='".get_theme_mod( 'googleplus' )."'><i class='fa fa-google-plus'></i></a></li>":''; ?>
