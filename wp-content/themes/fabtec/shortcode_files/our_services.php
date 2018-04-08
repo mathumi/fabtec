@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Employee services Shortcode
+ * Our services Shortcode
  */
 
 function our_services($atts) {
@@ -17,18 +17,18 @@ function our_services($atts) {
     if ($services) {
         foreach ($services as $service) {
             $post_id = $service->ID;
-                    $post = get_post( $post_id );
+            $post = get_post( $post_id );
 	    $title = $service->post_title;
         $content = $post->post_content;
-            $designation = get_the_content(post_id);
+        $read_more_url=get_post_meta($post_id, 'read_more_url')[0];
 	    $html.= '<div class="item col-sm-4">';
 	    if (has_post_thumbnail($post_id)):
 		$image = wp_get_attachment_image_src(get_post_thumbnail_id($post_id), 'single-post-thumbnail');
 		$html .= '<div class="service_bg" style="background-image:url('.$image[0].')")></div>';
 	    endif;
-            $html .= '<div class="service_nam">'.$title.'</div>'
-                    .'<div class="service_prof">'. $content.'</div>
-                    <a href="'.$read_more_url.'">Read More</a>
+            $html .= '<h4 class="service_nam red_text">'.$title.'</h4>'
+                    .'<div class="service_prof">'. the_excerpt_max_charlength($content,210).'</div>
+                    <a href="'.$read_more_url.'" class="btn_primary">Read More</a>
                     </div>';
                    
         }
