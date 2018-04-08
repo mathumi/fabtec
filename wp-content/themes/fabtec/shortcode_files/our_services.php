@@ -21,13 +21,13 @@ function our_services($atts) {
 	    $title = $service->post_title;
         $content = $post->post_content;
             $designation = get_the_content(post_id);
-	    $html.= '<div class="item">';
+	    $html.= '<div class="item col-sm-4">';
 	    if (has_post_thumbnail($post_id)):
 		$image = wp_get_attachment_image_src(get_post_thumbnail_id($post_id), 'single-post-thumbnail');
 		$html .= '<div class="service_bg" style="background-image:url('.$image[0].')")></div>';
 	    endif;
-            $html .= '<div class="emp_nam">'.$title.'</div>'
-                    .'<div class="emp_prof">'. $content.'</div>
+            $html .= '<div class="service_nam">'.$title.'</div>'
+                    .'<div class="service_prof">'. $content.'</div>
                     <a href="'.$read_more_url.'">Read More</a>
                     </div>';
                    
