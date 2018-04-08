@@ -163,7 +163,7 @@ function twentysixteen_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name'          => __( 'Content Bottom 1', 'twentysixteen' ),
+		'name'          => __( 'Footer About Us', 'twentysixteen' ),
 		'id'            => 'sidebar-2',
 		'description'   => __( 'Appears at the bottom of the content on posts and pages.', 'twentysixteen' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -171,10 +171,27 @@ function twentysixteen_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
-
 	register_sidebar( array(
-		'name'          => __( 'Content Bottom 2', 'twentysixteen' ),
+		'name'          => __( 'Footer Quick Links', 'twentysixteen' ),
 		'id'            => 'sidebar-3',
+		'description'   => __( 'Appears at the bottom of the content on posts and pages.', 'twentysixteen' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Footer Services', 'twentysixteen' ),
+		'id'            => 'sidebar-4',
+		'description'   => __( 'Appears at the bottom of the content on posts and pages.', 'twentysixteen' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Footer Certifications', 'twentysixteen' ),
+		'id'            => 'sidebar-5',
 		'description'   => __( 'Appears at the bottom of the content on posts and pages.', 'twentysixteen' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
@@ -529,5 +546,16 @@ $wp_customize->add_control( 'facebook', array(
 add_action('customize_register', 'facebook_settings');
 
 
+foreach(glob(__DIR__.'/shortcode_files/*.php') as $file) {
+    require $file;
+}
 
-
+function the_excerpt_max_charlength($string, $length) {
+   $string = strip_tags($string);  	
+   if(strlen($string) > $length){
+$string = substr($string,0,$length);
+$pos=strripos($string, ' ');
+$string = substr($string, 0,$pos).'...'; 
+   }
+   return $string;
+}
