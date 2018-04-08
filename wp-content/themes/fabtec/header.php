@@ -31,7 +31,7 @@
 		<!-- short header -->
 		<section>
 		<div class="container-fluid">
-		<div class="contact_header row text-left padding_h15 hidden-xs">
+		<div class="contact_header row text-left padding_h25 hidden-xs">
 			<div class="col-md-8 col-sm-9">
 			<ul class="list-inline">
 				<?php echo (get_theme_mod( 'address' )!='')?"<li><a href='javascript:void(0);' class='cursor_default'><i class='fa fa-map-marker'></i>&nbsp;".get_theme_mod( 'address' )."</a></li>":''; ?>
@@ -53,8 +53,8 @@
 			<?php } ?>
 
 		<header id="masthead" class="site-header header" role="banner">
-			<div class="site-header-main padding_h15">
-				<div class="site-branding padding_h15">
+			<div class="site-header-main padding_h25">
+				<div class="site-branding padding_h25">
 					<?php twentysixteen_the_custom_logo(); ?>
 
 					<?php if ( is_front_page() && is_home() ) : ?>
