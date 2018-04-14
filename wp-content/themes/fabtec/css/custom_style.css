@@ -211,10 +211,6 @@ header .main-navigation li:hover ul.sub-menu{
 .main-navigation li{
 	border: none;
 }
-.main-navigation li:not(:first-child){
-	border-top: 1px solid #eaeaea;
-
-}
 header .main-navigation ul ul li{
 	border:0;
 	background: #f1f1f1;
@@ -391,6 +387,13 @@ header .main-navigation ul ul.sub-menu:before{
 	}
 	header .main-navigation .primary-menu > li a{
 		font-size: 14px;
+	}
+	header .main-navigation .primary-menu > li:hover,header .main-navigation ul ul li,
+	header .main-navigation ul ul.sub-menu{
+		background: none;
+	}
+	header .main-navigation ul ul.sub-menu,.dropdown-toggle:after{
+		border: none;
 	}
 	.contact_header ul li a {
 		font-size: 10px;
