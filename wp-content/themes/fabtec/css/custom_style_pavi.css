@@ -22,8 +22,10 @@
 	font-family: 'Open Sans', sans-serif;
 }
 .caption-section .text{
-	font-size: 15px;
+	font-size: 16px !important;
 	font-family: 'Open Sans', sans-serif;
+	line-height: 25px !important;
+	width: 80%;
 }
 
 .crellyslider>.cs-navigation{
@@ -72,31 +74,62 @@
 .project_bg .read_more_url{
 	font-size: 40px;
 }
-.project_bg,.project_bg .service_prof,.project_bg .service_nam{
+.our_products .service_prof,.our_products .service_nam{
 	color: #fff;
 }
-.project_bg .project_overlay{
+.our_products .project_overlay{
 	background: rgba(23, 37, 75,0.6);
     position: absolute;
     padding: 10px 15px;
     width: 100%;
     bottom: 0;
 }
-.project_bg .read_more_url{
+.our_products .read_more_url{
 	color: #fff;
 }
-.project_bg .service_prof{
+.our_products .service_prof{
 	padding-bottom: 3px;
 }
-.project_bg .project_left{
+.our_products .project_left{
 	float: left;
 }
-.project_bg .project_right{
+.our_products .project_right{
 	float: right;
+}
+.our_products .read_more_url:hover{
+	text-decoration: none;
+}
+.our_products .service_nam{
+	font-size: 18px;	
+}
+.about_us .btn_primary,.about_us .btn_primary:hover,
+.about_us .btn_primary:active,.about_us .btn_primary:visited{
+	font-size: 16px;
+}
+.our_clients{
+	text-align: center;
+	padding-top: 35px;
+	padding-bottom: 55px;
+}
+
+@media (max-width:1200px){
+	.our_clients.padding_h40{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+@media (max-width:1080px){
+	.our_clients li{
+		width: 25%;
+		margin-bottom: 20px;
+	}
 }
 @media (max-width:991px){
 	.caption-section{
 		width: 300px;
+	}
+	.our_clients li{
+		width: 30%;
 	}
 	.crellyslider>.cs-navigation>.cs-slide-link{
 		width: 10px;
@@ -112,6 +145,9 @@
 	}
 }
 @media (max-width:767px){
+	.our_clients li{
+			width: 48%;
+	}
 	.caption-section .text{
 		font-size: 14px !important;
 		line-height: 1.4 !important;
@@ -131,5 +167,14 @@
 	}
 	.crellyslider>.cs-navigation{
 		bottom: 25px;
+	}
+}
+@media (max-width:480px){
+	.our_clients li{
+			width: 100%;
+			margin-right: 0;
+	}
+	.client-section{
+		margin-left: 0;
 	}
 }

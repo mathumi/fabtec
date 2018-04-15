@@ -82,7 +82,7 @@ a{
 	height:2px;
 	background-color: #fff ;
 }
-.btn_primary,.btn_primary:hover,.btn_primary:active,.btn_primary:visited{
+.btn_primary{
 	text-decoration: none;
     font-weight: 600;
     font-size: 14px;
@@ -113,6 +113,14 @@ a{
     border-style: solid;
     border-width: 1px 5px 1px 0;
     right: -8px;
+}
+.btn_primary:hover:before,.btn_primary:hover:after{
+	content: none;
+}
+.btn_primary:hover{
+	background: #05215c;
+	color: #fff;
+	text-decoration: none;
 }
 @-webkit-keyframes slideInUp {
   from {
@@ -547,13 +555,12 @@ footer h2:after{
 	}
 	header .main-navigation .primary-menu > li a{
 		font-size: 14px;
-	}
-	header .main-navigation .primary-menu > li:hover,header .main-navigation ul ul li,
-	header .main-navigation ul ul.sub-menu{
-		background: none;
-	}
+	}	
 	header .main-navigation ul ul.sub-menu,.dropdown-toggle:after{
 		border: none;
+	}
+	.main-navigation{
+		margin: 0;
 	}
 	.contact_header ul li a {
 		font-size: 10px;
@@ -564,20 +571,40 @@ footer h2:after{
 	}
 	footer .widget{
 	margin-top: 30px;}
-footer{
-	text-align: center;
-}
-footer .widget-title{
-	display: inline-block;
-	position: relative;
-    clear: both;
-}
-.quick_link{
-	text-align: left;
-}
+	footer{
+		text-align: center;
+	}
+	footer .widget-title{
+		display: inline-block;
+		position: relative;
+	    clear: both;
+	}
+	.quick_link{
+		text-align: left;
+	}
+	h2,.consultation_form h2 {
+	    font-size: 24px;
+	 }
+	 .consultation_form h4{
+	 	font-size: 19px;
+	 }
+	 .padding_h40 {
+	    padding-left: 30px;
+	    padding-right: 30px;
+	}
+	.project_bg .read_more_url{
+		font-size: 30px;
+	}
+	.our_products .service_nam {
+	    font-size: 16px;
+	}
 }
 
 @media (max-width:767px){
+	header .main-navigation .primary-menu > li:hover,header .main-navigation ul ul li,
+	header .main-navigation ul ul.sub-menu{
+		background: none;
+	}
 	header .main-navigation a{
 		    font-size: 13px;
 	}
@@ -608,12 +635,37 @@ footer .widget-title{
 	}
 	.contact_info .contact_row{
 	display: block;
-}
-.contact_info iframe{
-	margin-bottom: 0;
-}
-footer{
-	text-align: left;
-}
+	}
+	.contact_info iframe{
+		margin-bottom: 0;
+	}
+	footer{
+		text-align: left;
+	}
+	body{
+		font-size: 14px;
+	}
+	.padding_h40 {
+	    padding-left: 20px;
+	    padding-right: 20px;
+	}
+	h2,.consultation_form h2 {
+   		font-size: 20px;
+ 	}
+ 	h4 {
+ 	   font-size: 17px;
+	}
+ 	h5 {
+    	font-size: 16px;
+	}
+	.consultation_form h4{
+	 	font-size: 17px;
+	 }
+	 .main-navigation .primary-menu{
+	 	border-bottom: none;
+	 }
+	 .site-header-menu {
+    	border-bottom: 2px solid #303030;
+	}
 }
 
