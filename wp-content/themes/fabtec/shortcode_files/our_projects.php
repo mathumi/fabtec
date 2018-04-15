@@ -25,10 +25,9 @@ function our_projects($atts) {
 	    if (has_post_thumbnail($post_id)):
 		$image = wp_get_attachment_image_src(get_post_thumbnail_id($post_id), 'single-post-thumbnail');
 	    endif;
-            $html .= '<div class="project_bg" style="background-image:url('.$image[0].')")><div class="service_nam">'.$title.'</div>'
-                    .'<div class="service_prof">'. $project_type.'</div>
-                    <a href="'.$read_more_url.'">Read More</a>
-                    </div></div>';
+            $html .= '<div class="project_bg" style="background-image:url('.$image[0].')")><div class="project_overlay clearfix">'
+                    .'<div class="project_left"><div class="service_prof">'. $project_type.'</div><div class="service_nam">'.$title.'</div></div><div class="project_right"><a class="read_more_url" href="'.$read_more_url.'">+</a></div>
+                    </div></div></div>';
                    
         }
     }

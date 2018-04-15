@@ -63,6 +63,37 @@
 	text-align: center;
 	margin: 0 auto;
 }
+.about_us_right{
+	padding-top: 30px;
+}
+.project_bg{
+	position: relative;
+}
+.project_bg .read_more_url{
+	font-size: 40px;
+}
+.project_bg,.project_bg .service_prof,.project_bg .service_nam{
+	color: #fff;
+}
+.project_bg .project_overlay{
+	background: rgba(23, 37, 75,0.6);
+    position: absolute;
+    padding: 10px 15px;
+    width: 100%;
+    bottom: 0;
+}
+.project_bg .read_more_url{
+	color: #fff;
+}
+.project_bg .service_prof{
+	padding-bottom: 3px;
+}
+.project_bg .project_left{
+	float: left;
+}
+.project_bg .project_right{
+	float: right;
+}
 @media (max-width:991px){
 	.caption-section{
 		width: 300px;
