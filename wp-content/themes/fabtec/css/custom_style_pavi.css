@@ -143,6 +143,15 @@
 		font-size: 28px !important;
 		line-height: 1.4 !important;
 	}
+	.our_products .project_overlay{
+		padding: 10px;
+	}
+	.project_bg .read_more_url{
+		font-size: 24px;
+	}
+	.our_products .service_nam {
+    	font-size: 14px;
+	}
 }
 @media (max-width:767px){
 	.our_clients li{

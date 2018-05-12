@@ -185,12 +185,19 @@ a{
 }
 
 .contact_header ul li i{
-	padding-right: 12px;
-	font-size: 20px;
+	padding-right: 10px;
+	font-size: 19px;
     display: inline-block;
     vertical-align: bottom;
  }
 
+ .contact_header ul li i.fa.fa-map-marker{
+ 	font-size: 18px;
+ }
+
+ .contact_header ul li a:hover{
+ 	text-decoration: none;
+ }
 .contact_header ul.social_media_head li i{
 	padding-right: 0;
 }
@@ -391,6 +398,10 @@ header .main-navigation ul ul.sub-menu:before{
 	color:#05215c;
 	/*min-height: 88px;*/
 }
+.service_prof a{
+	display: block;
+	color:#05215c;
+}
 
 footer.site-footer{
 	background: #102C6D;
@@ -452,6 +463,9 @@ height: 50px;
 margin-bottom: 7px;
 border-radius: 0;
 padding-left: 16px;
+}
+.form_1 text-area{
+	margin-bottom: 7px;
 }
 .form_1 input::-webkit-input-placeholder ,.form_1 textarea::-webkit-input-placeholder{ /* Chrome/Opera/Safari */
   color: #fff;

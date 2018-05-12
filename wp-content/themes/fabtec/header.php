@@ -36,7 +36,7 @@
 			<ul class="list-inline">
 				<?php echo (get_theme_mod( 'address' )!='')?"<li><a href='javascript:void(0);' class='cursor_default'><i class='fa fa-map-marker'></i>&nbsp;".get_theme_mod( 'address' )."</a></li>":''; ?>
 				<?php echo (get_theme_mod( 'phone' )!='')?"<li><a href='tel:+6567342823'><i class='fa fa-phone'></i>".get_theme_mod( 'phone' )."</a></li>":''; ?>
-				<?php echo (get_theme_mod( 'email' )!='')?"<li><a href='mailto:info@fabtec.com.sg'><i class='fa fa-envelope'></i>".get_theme_mod( 'email' )."</a></li>":''; ?>
+				<?php echo (get_theme_mod( 'email' )!='')?"<li><a href='mailto:info@fabtec.com.sg'><i class='fa fa-envelope-o'></i>".get_theme_mod( 'email' )."</a></li>":''; ?>
 				</ul>
 			</div>
 

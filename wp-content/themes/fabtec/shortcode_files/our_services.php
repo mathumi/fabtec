@@ -27,7 +27,7 @@ function our_services($atts) {
 		$html .= '<div class="service_bg" style="background-image:url('.$image[0].')")></div>';
 	    endif;
             $html .= '<h4 class="service_nam red_text">'.$title.'</h4>'
-                    .'<div class="service_prof">'. the_excerpt_max_charlength($content,210).'</div>
+                    .'<div class="service_prof">'. $content.'</div>
                     <a href="'.$read_more_url.'" class="btn_primary">Read More</a>
                     </div>';
                    
