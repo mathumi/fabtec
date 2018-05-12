@@ -33,7 +33,7 @@
 				<div class="col-md-3">
 				<p><?php twentysixteen_the_custom_logo(); ?></p>
 					<?php dynamic_sidebar("sidebar-2") ?>
-					<p><?php echo (get_theme_mod( 'address' )!='')?get_theme_mod( 'address' ):''; ?></p>
+					<p class="foo_address"><?php echo (get_theme_mod( 'address' )!='')?get_theme_mod( 'address' ):''; ?></p>
 					<p>Tel/Fax : <?php echo (get_theme_mod( 'phone' )!='')?"<a href='tel:+6567342823'>".get_theme_mod( 'phone' )."</a>":''; ?></p>
 				</div>
 				<div class="col-sm-6 col-md-3 quick_link">
