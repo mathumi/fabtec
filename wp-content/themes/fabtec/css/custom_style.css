@@ -169,8 +169,8 @@ a{
 
 .contact_header {
 	    background: #1F479C;
-	    padding-top:12px;
-	    padding-bottom: 12px;
+	    padding-top:9px;
+	    padding-bottom: 9px;
 }
 
 .contact_header ul li a{
@@ -217,7 +217,7 @@ header .main-navigation .primary-menu > li.current-menu-item a{
 }
 
 header .main-navigation .primary-menu > li{
-	padding: 25px 0;
+	padding: 17px 0;
     
 }
 
@@ -393,10 +393,29 @@ header .main-navigation ul ul.sub-menu:before{
 .our_services .item{
 	margin:10px 0 20px;
 }
+.service_nam{
+	white-space: nowrap;
+	width: 100%;
+	overflow-x: hidden;
+	text-overflow: ellipsis;
+	line-height: 27px;
+}
 .service_prof{
 	font-size:14px;
 	color:#05215c;
-	/*min-height: 88px;*/
+	height: 95px;
+    overflow: hidden;
+    position: relative;
+}
+.service_prof:after{
+	content: '';
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    left: 0;
+    background: rgba(243,246,251,0.7);
+    opacity: 1;
+    bottom: 0;
 }
 .service_prof a{
 	display: block;
@@ -413,10 +432,13 @@ footer *{
 	color: #fff;
 	font-size: 14px;
 }
-footer a, footer p{
+footer a, footer p,footer a:hover,footer a:focus{
 	color: #fff;
-	font-weight: 600;
+	font-weight: normal;
 	
+}
+.foo_address{
+	width:70%;
 }
 footer .widget{
 	margin-bottom: 30px;
@@ -576,6 +598,9 @@ footer h2:after{
 	.main-navigation{
 		margin: 0;
 	}
+	.site-header-menu{
+		display: none;
+	}
 	.contact_header ul li a {
 		font-size: 10px;
 	}
@@ -628,11 +653,13 @@ footer h2:after{
 	}
 	.main-navigation .primary-menu{
 		text-align: left;
-		    margin-left: 10px;
+		   
 	}
 	header .main-navigation .primary-menu > li {
 		display: block;
 		margin-left: 0 !important;
+		 border-bottom: 1px solid #f1f1f1;
+		  padding-left: 10px;
 	}
 	.site-header-menu{
 		    border-top: 2px solid #303030;
@@ -652,6 +679,12 @@ footer h2:after{
 	}
 	.contact_info iframe{
 		margin-bottom: 0;
+	}
+	.service_nam{
+		text-overflow: clip;
+		overflow: initial;
+		white-space: normal;
+		line-height: normal;
 	}
 	footer{
 		text-align: left;
@@ -680,6 +713,9 @@ footer h2:after{
 	 }
 	 .site-header-menu {
     	border-bottom: 2px solid #303030;
+	}
+	.service_prof:after{
+		content: none;
 	}
 }
 
