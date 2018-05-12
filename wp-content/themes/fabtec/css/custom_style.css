@@ -421,7 +421,7 @@ footer *{
 	color: #fff;
 	font-size: 14px;
 }
-footer a, footer p{
+footer a, footer p,footer a:hover,footer a:focus{
 	color: #fff;
 	font-weight: normal;
 	
