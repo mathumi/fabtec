@@ -105,7 +105,33 @@
 	padding-top: 35px;
 	padding-bottom: 55px;
 }
+/*About us page*/
 
+.about_us_page .right_video iframe{
+	margin-left: 30px
+}
+.vision_section{
+	font-size: 14px;
+	background: #f3f6fb;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.value_list li{
+	position: relative;
+	list-style: none;
+	padding-bottom: 10px;
+}
+.value_list li:before{
+	content: "\00BB";
+	position: absolute;
+	left: -20px;
+	top: 0;
+	padding-right: 10px;
+}
+.org_structure	.blue_underline:after {
+    left: 50%;
+    margin-left: -35px;
+}
 @media (max-width:1200px){
 	.our_clients.padding_h40{
 		padding-left: 15px;
