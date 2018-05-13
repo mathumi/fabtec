@@ -24,7 +24,7 @@ function our_services($atts) {
 	    $html.= '<div class="item col-sm-4">';
 	    if (has_post_thumbnail($post_id)):
 		$image = wp_get_attachment_image_src(get_post_thumbnail_id($post_id), 'single-post-thumbnail');
-		$html .= '<div class="service_bg" style="background-image:url('.$image[0].')")></div>';
+		$html .= '<div class="service_bg"><img class="img-responsive" src="'.$image[0].'"></div>';
 	    endif;
             $html .= '<h4 class="service_nam red_text">'.$title.'</h4>'
                     .'<div class="service_prof">'. $content.'</div>
