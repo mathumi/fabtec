@@ -576,7 +576,92 @@ footer h2:after{
 	height: auto !important;
 	margin-top:10px !important;
 }
+.contact_map{
+	height: 75vh;
+	position: relative;
+}
+.contact_caption {
+	position: absolute;
+	left:0;
+	bottom: 0;
+	background: #ECECEA;
+	padding:50px 0;
+	width:100%;
+	font-size:23px;
+	text-align: center;
+	margin-bottom: 0 !important;
+}
+.form_1_black input,.form_1_black input:focus,.form_1_black input:hover,.form_1_black textarea{
+	border: 1px solid #000;
+	color:#000;
+}
+.form_1_black input[type="submit"]{
+	color:#fff !important;
+	background-color: #05215c !important;
+width: 210px;
+}
+.c_address p{
+	margin-bottom: 0;
+}
+.c_address{
+	margin: 15px 0 20px;
+}
+.our_location{
+	padding: 40px;
+}
+.blue_heading{
+	background: #05215c;
+	color: #fff;
+	padding: 10px 20px 10px 40px;
+	font-size: 16px;
+	font-weight: bold;
+	position: relative;
+	border:1px solid #05215c;
+}
+.blue_heading:before{
+	content: '';
+    position: absolute;
+    left: 5px;
+    top: 0;
+    width: 10px;
+    height: 100%;
+    background: #fff;
 
+}
+.address_block{
+	margin: 10px -15px 0px;
+}
+.our_rep{
+
+}
+.head_block{
+	background: #ECECEA;
+	padding: 30px 40px;
+}
+.head_block h2{
+	margin-bottom: 0;
+}
+.rep_text p{
+	margin-bottom: 0;
+}
+.rep_head{
+	color: #05215c;
+	font-weight:bold;
+}
+.rep_contact{
+	margin-top: 20px;
+}
+.our_rep{
+	padding: 36px 15px 50px;
+}
+.our_rep .col-sm-4{
+	padding-right: 40px;
+}
+.rep_contact a{
+	color:#000;
+	text-decoration: underline;
+}
+/* Responsive */
 @media (min-width:1500px){
 	body{
 		max-width: 1500px;
@@ -740,6 +825,9 @@ footer h2:after{
 	}
 	.service_prof:after{
 		content: none;
+	}
+	.our_rep .col-sm-4{
+		margin-bottom: 50px;
 	}
 }
 
