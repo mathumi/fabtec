@@ -661,6 +661,38 @@ width: 210px;
 	color:#000;
 	text-decoration: underline;
 }
+
+.block_img{
+	margin-bottom: 20px;
+	min-height: 70px;
+	padding-left: 90px;
+	padding-right: 90px;
+	height: 127px;
+overflow: hidden;
+line-height: 127px;
+}
+.block_inner{
+	border: 1px solid #ccc;
+	text-align: center;
+	min-height: 220px;
+	padding: 35px 0px 20px;
+	height:100%;
+}
+.block_inner p{
+	margin-bottom: 0;
+	    font-weight: bold;
+    font-size: 20px;
+    padding:0 10px;
+}
+.block_row{
+	margin: 30px -15px 50px !important;
+	text-align: left;
+	display: flex;
+    flex-wrap: wrap;
+}
+.block_box{
+		margin: 0 0 30px;
+}
 /* Responsive */
 @media (min-width:1500px){
 	body{
@@ -678,6 +710,10 @@ width: 210px;
 
 	#top-menu {
 	 display: none;
+	 }
+	 .block_img{
+	 	padding-left: 80px;
+		padding-right: 80px;
 	 }
 }
 @media (max-width:991px){
@@ -746,6 +782,13 @@ width: 210px;
 	.our_products .service_nam {
 	    font-size: 16px;
 	}
+	.block_img{
+	 	padding-left: 30px;
+		padding-right: 30px;
+	 }
+	 	.block_inner p{
+		font-size: 16px;
+	}	
 }
 
 @media (max-width:767px){
@@ -829,5 +872,16 @@ width: 210px;
 	.our_rep .col-sm-4{
 		margin-bottom: 50px;
 	}
+	.block_box{
+		width: 50%;
+    float: left;
+	}
 }
 
+@media (max-width:500px){
+	.block_box{
+		width: 100%;
+    float: none;
+   
+	}
+}
