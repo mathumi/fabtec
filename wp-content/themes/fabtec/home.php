@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Inner Page Template
+ * Template Name: Home Template
  */
 
 get_header();
@@ -18,12 +18,7 @@ if($backgroundImg[0] == null){
      </div>
   </div> 
   </div> -->
-  <section>
-    <div class="inner_banner" style="background: url(http://localhost/fabtec/wp-content/uploads/2018/05/banner-inner-page-about.jpg);">
-    <h1><?php the_title(); ?></h1>
-    </div>
-  </section>
-<?php while (have_posts()) : the_post(); ?>
+ <?php while (have_posts()) : the_post(); ?>
     <?php the_content(); ?>
 <?php endwhile; ?>
 <?php get_footer(); ?>

@@ -16,7 +16,7 @@ body:after {
   display: none !important;
 }
 h2{
-	font-size:34px;
+	font-size:32px;
 	font-weight:600;
 	margin: 15px 0 25px;
 
@@ -48,7 +48,7 @@ a{
 }
 .white_underline{
 	position: relative;
-	    padding-bottom: 15px;
+	padding-bottom: 15px;
 }
 .padding_h40{
 	padding-left: 40px;
@@ -417,7 +417,7 @@ header .main-navigation ul ul.sub-menu:before{
 .service_prof{
 	font-size:14px;
 	color:#05215c;
-	height: 95px;
+	height: 170px;
     overflow: hidden;
     position: relative;
 }
