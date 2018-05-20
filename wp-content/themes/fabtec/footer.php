@@ -52,6 +52,7 @@
 	</div><!-- .site-inner -->
 </div><!-- .site -->
 <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.js" /></script>
+<script src="<?php bloginfo('template_url'); ?>/js/custom_script.js" /></script>
 <?php wp_footer(); ?>
 </body>
 </html>
