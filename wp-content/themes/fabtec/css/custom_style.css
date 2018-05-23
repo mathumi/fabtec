@@ -1023,6 +1023,9 @@ border: 1px solid #05215c;
 	.service_img{
 		margin-bottom: 30px;
 	}
+	.service_prof{
+		height: auto;
+	}
 }
 
 @media (max-width:500px){
