@@ -67,9 +67,10 @@
 .project_bg .read_more_url{
 	font-size: 40px;
 }
-.our_products .service_prof,.our_products .service_nam{
+.our_products .service_prof,.our_products .product_nam{
 	color: #fff;
 }
+
 .our_products .project_overlay{
 	background: rgba(23, 37, 75,0.6);
     position: absolute;
@@ -85,6 +86,7 @@
 }
 .our_products .project_left{
 	float: left;
+	width: 80%;
 }
 .our_products .project_right{
 	float: right;
@@ -92,8 +94,10 @@
 .our_products .read_more_url:hover{
 	text-decoration: none;
 }
-.our_products .service_nam{
-	font-size: 18px;	
+.our_products .product_nam{
+	font-size: 18px;
+    min-height: 50px;
+    line-height: 25px;
 }
 .about_us .btn_primary,.about_us .btn_primary:hover,
 .about_us .btn_primary:active,.about_us .btn_primary:visited{
