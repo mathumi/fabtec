@@ -31,4 +31,3 @@ function certification_inner($atts) {
 
 add_shortcode('certification_inner', 'certification_inner');
 ?>
-

@@ -191,9 +191,11 @@
 	margin-bottom: 40px;
 	display: inline-block;
 }
-.apply_job:hover{
+.apply_job:hover,.apply_job:focus{
 	text-decoration: none;
 	color: inherit;
+	background: #05215c;
+    color: #fff;
 }
 .career_inner{
 	margin-top: 50px;
@@ -229,6 +231,7 @@
 	font-weight: bold;
 	margin-top: 0;
 }
+
 @media (max-width:1200px){
 	.our_clients.padding_h40{
 		padding-left: 15px;
@@ -294,6 +297,33 @@
 	.crellyslider>.cs-navigation{
 		bottom: 25px;
 	}
+	.inner_banner h1 {
+		font-size: 30px;
+		color: #fff;
+		line-height: 1.4;
+		text-align: center;
+		font-weight: bold;
+		padding: 60px;
+		margin-top: 0;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	.inner_banner{
+		margin-bottom: 40px;
+	}
+	.people-item .people_name{
+		padding-top: 0;
+	}
+	.people .people_content {
+		font-size: 14px;
+	}
+	.career_page .place,.career_page .date {
+		font-size: 14px;
+	}
+	.service_prof{
+		min-height: auto;
+	}
 }
 @media (max-width:480px){
 	.our_clients li{
@@ -302,5 +332,19 @@
 	}
 	.client-section{
 		margin-left: 0;
+	}
+	.about_us_right {
+		float: none !important;
+		padding-top: 0;
+	}
+	.about_us_page .right_video iframe{
+		margin-left: 0 ;
+		width: 90% !important;
+	}
+	.certification_border_outer{
+		width: 60%;
+	}	
+	.career_page ul {
+		padding-left: 20px;
 	}
 }

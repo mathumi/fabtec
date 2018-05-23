@@ -90,7 +90,8 @@ a{
     position: relative;
     padding: 7px 10px;
     display: inline-block;
-    margin:13px 8px 0;
+	margin:13px 8px 0;
+	z-index: 1;
 }
 .btn_primary:before{
 	content: '';
@@ -101,7 +102,8 @@ a{
     border-color: #05215c;
     border-style: solid;
     border-width: 1px 0 1px 5px;
-    left: -8px;
+	left: -8px;
+	z-index: -1;
 }
 .btn_primary:after{
 	content: '';
@@ -114,12 +116,15 @@ a{
     border-width: 1px 5px 1px 0;
     right: -8px;
 }
-.btn_primary:hover:before,.btn_primary:hover:after{
-	content: none;
-}
-.btn_primary:hover{
+.btn_primary:hover:before{
+	width: 115%;
+	transition: width 0.2s;
 	background: #05215c;
 	color: #fff;
+	
+}
+.btn_primary:hover,.btn_primary:focus{
+	color: #fff !important;
 	text-decoration: none;
 }
 @-webkit-keyframes slideInUp {
@@ -434,6 +439,7 @@ header .main-navigation ul ul.sub-menu:before{
 .service_prof a{
 	display: block;
 	color:#05215c;
+	text-align: left;
 }
 
 .product_prof{
