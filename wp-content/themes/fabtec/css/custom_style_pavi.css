@@ -224,13 +224,13 @@
     border: 1px solid #dddddd;
 }
 .inner_banner{
-	height: 205px;
+	height: 150px;
 	margin-bottom: 60px;
 }
 .inner_banner h1{
 	font-size: 50px;
 	color: #fff;
-	line-height: 200px;
+	line-height: 150px;
 	text-align: center;
 	font-weight: bold;
 	margin-top: 0;
