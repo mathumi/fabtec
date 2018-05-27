@@ -422,7 +422,7 @@ header .main-navigation ul ul.sub-menu:before{
 .service_prof{
 	font-size:14px;
 	color:#05215c;
-	height: 170px;
+	height: 190px;
     overflow: hidden;
     position: relative;
 }
@@ -440,6 +440,10 @@ header .main-navigation ul ul.sub-menu:before{
 	display: block;
 	color:#05215c;
 	text-align: left;
+}
+.contact_map{
+	margin-top:-60px;
+	padding: 0;
 }
 
 .product_prof{
@@ -519,6 +523,19 @@ padding-left: 16px;
 .form_1 textarea{
 	margin-bottom: 7px;
 }
+.our_location .form_1 input::-webkit-input-placeholder ,.our_location .form_1 textarea::-webkit-input-placeholder{ /* Chrome/Opera/Safari */
+  color: #000 !important;
+}
+.our_location .form_1 input::-moz-placeholder,.our_location .form_1 textarea::-webkit-input-placeholder { /* Firefox 19+ */
+  color: #000 !important;
+}
+.our_location .form_1 input:-ms-input-placeholder,.our_location .form_1 textarea::-webkit-input-placeholder { /* IE 10+ */
+  color: #000 !important;
+}
+.our_location .form_1 input:-moz-placeholder,.our_location .form_1 textarea::-webkit-input-placeholder { /* Firefox 18- */
+  color: #000 !important;
+}
+
 .form_1 input::-webkit-input-placeholder ,.form_1 textarea::-webkit-input-placeholder{ /* Chrome/Opera/Safari */
   color: #fff !important;
 }
@@ -1005,6 +1022,9 @@ border: 1px solid #05215c;
 	}
 	.service_img{
 		margin-bottom: 30px;
+	}
+	.service_prof{
+		height: auto;
 	}
 }
 

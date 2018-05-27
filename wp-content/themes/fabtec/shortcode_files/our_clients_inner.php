@@ -21,7 +21,7 @@ function our_clients_inner($atts) {
         $post = get_post( $post_id );
         $post_title = get_the_title($post_id);
 	   	$image =(has_post_thumbnail($post_id))? wp_get_attachment_image_src(get_post_thumbnail_id($post_id), 'single-post-thumbnail')[0]: esc_url(home_url('/'))."/wp-content/uploads/2018/04/fabtec-logo.png";
-    	$html .= '<li class="col-sm-4 block_box"><div class="block_inner"><div class="block_img"><img src='.$image.' alt="'.$post_title.'" title="'.$post_title.'"></div><p>'.$post_title.'</p></div></li>';           
+    	$html .= '<li class="col-sm-4 block_box"><div class="block_inner"><div class="block_img"><img src='.$image.' alt="'.$post_title.'" title="'.$post_title.'"></div></div></li>';           
         }
         $html.= '</ul>';
     }
