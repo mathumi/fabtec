@@ -276,6 +276,9 @@
 	.our_products .service_nam {
     	font-size: 14px;
 	}
+	.our_products .project_right{
+		margin-top: 20px;
+	}
 }
 @media (max-width:767px){
 	.our_clients li{
@@ -326,7 +329,12 @@
 		font-size: 14px;
 	}
 	.service_prof{
-		min-height: auto;
+		height: auto;
+	}
+	.our_products .product_nam {
+	    font-size: 14px;
+	    min-height: auto;
+	    line-height: 20px;
 	}
 }
 @media (max-width:480px){
@@ -350,5 +358,8 @@
 	}	
 	.career_page ul {
 		padding-left: 20px;
+	}
+	.caption-section{
+		width: 85%;
 	}
 }
