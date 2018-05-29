@@ -14,7 +14,7 @@ function people($atts) {
     );       
     $people = get_posts($args);
     if ($people) {
-    	$html.= '<div class="people flex"><div class="row">';
+    	$html.= '<div class="people"><div class="row flex">';
         foreach ($people as $people) {
         $post_id = $people->ID;
         $post = get_post( $post_id );
