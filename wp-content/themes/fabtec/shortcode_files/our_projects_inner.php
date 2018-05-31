@@ -9,7 +9,7 @@ function our_projects_inner($atts) {
     $args = array(
         'post_type' => 'recent_projects',
         'post_status' => 'publish',
-        'numberposts' => -1,
+        'numberposts' => 2,
         'order' => 'DESC'
     );     
 

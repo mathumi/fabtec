@@ -42,9 +42,9 @@
 
 			<div class="col-md-4 col-sm-3 text-right">
 			<ul class="list-inline social_media_head">
-			<?php echo (get_theme_mod( 'youtube' )!='')?"<li><a href='".get_theme_mod( 'youtube' )."'><i class='fa fa-youtube'></i></a></li>":''; ?>
-			<?php echo (get_theme_mod( 'googleplus' )!='')?"<li><a href='".get_theme_mod( 'googleplus' )."'><i class='fa fa-google-plus'></i></a></li>":''; ?>
-			<?php echo (get_theme_mod( 'facebook' )!='')?"<li><a href='".get_theme_mod( 'facebook' )."'><i class='fa fa-linkedin'></i></a></li>":''; ?>
+			<?php echo (get_theme_mod( 'youtube' )!='')?"<li><a target='_blank' href='".get_theme_mod( 'youtube' )."'><i class='fa fa-youtube'></i></a></li>":''; ?>
+			<?php echo (get_theme_mod( 'googleplus' )!='')?"<li><a target='_blank' href='".get_theme_mod( 'googleplus' )."'><i class='fa fa-google-plus'></i></a></li>":''; ?>
+			<?php echo (get_theme_mod( 'facebook' )!='')?"<li><a target='_blank' href='".get_theme_mod( 'facebook' )."'><i class='fa fa-linkedin'></i></a></li>":''; ?>
 			</ul>
 			</div>
 			</div>
