@@ -74,7 +74,7 @@
 .our_products .project_overlay{
 	background: rgba(23, 37, 75,0.6);
     position: absolute;
-    padding: 10px 15px;
+    padding: 10px 15px 0;
     width: 100%;
     bottom: 0;
 }
@@ -228,7 +228,10 @@
 }
 .inner_banner{
 	height: 110px;
-	margin-bottom: 60px;
+	margin-bottom: 40px;
+}
+.services_inner{
+	padding-bottom: 30px;
 }
 .inner_banner h1{
 	font-size: 50px;
@@ -319,12 +322,24 @@
 }
 .other_project_list li img{
 	width: 100%;
+	max-height: 300px;
 }
 .other_project_list li p{
 	text-align: left;
 	font-style: normal;
 	padding: 15px 0;
 	margin-bottom: 0;
+}
+.cert_box{
+	display: inline-block;
+	width: 25%;
+}
+.certification ul{
+	margin: 0 auto;
+	list-style: none;
+}
+.certification{
+	text-align: center;
 }
 @media (max-width:1200px){
 	.our_clients.padding_h40{

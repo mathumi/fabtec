@@ -18,10 +18,9 @@ function certification_inner($atts) {
         foreach($certifications as $certification) {
         $post_id = $certification->ID;
         $post = get_post( $post_id );
-	    $html.= '<div class="certification-item text-center">';
 	    if (has_post_thumbnail($post_id)):
 		$image = wp_get_attachment_image_src(get_post_thumbnail_id($post_id), 'single-post-thumbnail');
-		$html .= '<li class="col-sm-3 cert_box"><div class="certification_border_outer"><div class="certification_border_inner"><img class="img-responsive" src="'.$image[0].'"></div></div></li></div>';
+		$html .= '<li class="cert_box"><div class="certification_border_outer"><div class="certification_border_inner"><img class="img-responsive" src="'.$image[0].'"></div></div></li>';
 	    endif;                 
         }
     	$html.= '</ul></div>';        

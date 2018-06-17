@@ -644,6 +644,7 @@ width: 210px;
 }
 .our_location{
 	padding: 40px;
+	padding-top: 0;
 }
 .blue_heading{
 	background: #05215c;
